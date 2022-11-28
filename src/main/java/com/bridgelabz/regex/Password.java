@@ -8,7 +8,7 @@ public class Password {
 
 public static boolean checkLastName(String password){
 		
-		String pass = "^(?=.*[a-z])(?=.*[A-Z]).{8,20}$";
+		String pass = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$";
 		Pattern pattern = Pattern.compile(pass);
 		
 		if(password == null)
