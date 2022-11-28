@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class LastName {
 
-public static boolean checkFirstName(String name){
+public static boolean checkLastName(String name){
 		
 		String fName = "^[A-Z]{1}[a-z]{2,10}$";
 		Pattern pattern = Pattern.compile(fName);
@@ -23,7 +23,7 @@ public static boolean checkFirstName(String name){
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter last name: ");
 		String lastName = scan.nextLine();
-		System.out.print(checkFirstName(lastName));
+		System.out.print(checkLastName(lastName));
 		
 	}
 }
