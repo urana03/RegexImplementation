@@ -8,8 +8,8 @@ public class Email {
 
 public static boolean checkLastName(String email){
 		
-		String pass = "^[a-z]+(\\.[a-z]+)*@"+"[a-z]+(\\.[a-z]+)*(\\.[a-z]{2,})$";
-		Pattern pattern = Pattern.compile(pass);
+		String pat = "^[A-Za-z0-9-\\+]+(\\.[A-Za-z0-9-]+)*@"+"[A-za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+		Pattern pattern = Pattern.compile(pat);
 		
 		if(email == null)
 			return false;
